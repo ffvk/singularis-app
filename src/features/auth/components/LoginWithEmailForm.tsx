@@ -34,6 +34,19 @@ export default function LoginWithEmailForm() {
       Toast.show({type: "success",text1: "Login successful"});
 
     },
+
+      onError: (error: any) => {
+    console.log("Login error:", error);
+
+    Toast.show({
+      type: "error",
+      text1: "Login failed",
+      text2:
+       error.response.data.message.error_description ||
+        error?.message ||
+        "Something went wrong",
+    });
+  },
   });
 
   useEffect(() => {
