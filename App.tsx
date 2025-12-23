@@ -1,5 +1,4 @@
 import React from "react";
-import { NavigationContainer } from "@react-navigation/native";
 import { ThemeProviderCustom } from "./src/theme/ThemeProviderCustom";
 import { AuthProvider } from "./src/providers/AuthProvider";
 import RootNavigator from "./src/navigation/RootNavigator";
